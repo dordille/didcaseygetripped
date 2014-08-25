@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Did Casey get ripped?</title>
+    <style type="text/css">
+        html {
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Did casey get ripped by <span id="by"></span>?</h1>
+    <h1>Yes</h1>
+  <script>
+  var rips = [
+    "Dan in basketball",
+    "Mike in Mario Party",
+    "Aharon in 2k",
+    "Dave in Madden"
+  ]
+  var rip = rips[Math.floor(Math.random()*rips.length)];
+  console.log(rip)
+  document.getElementById('by').innerHTML = rip;
+  </script>
+  </body>
+</html>
